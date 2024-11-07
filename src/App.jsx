@@ -1,35 +1,27 @@
+const Flag = props => {
+	return (
+		<>
+			<div>
+				<h2> {props.country} </h2>
+				<img
+					src={`/assets/images/${props.image}`}
+					alt={`bandera de ${props.country}`}
+					width={300}
+				/>
+			</div>
+		</>
+	);
+};
+
 const App = () => {
 	return (
 		<>
 			<h1>Curso de react.</h1>
-			<div>
-				<h2>Colombia</h2>
-				<img
-					src='/assets/images/co.svg'
-					alt='bandera de colombia'
-					width={300}
-				/>
-			</div>
-			<div>
-				<h2>Canadá</h2>
-				<img src='/assets/images/ca.svg' alt='bandera de canada' width={300} />
-			</div>
-			<div>
-				<h2>España</h2>
-				<img src='/assets/images/es.svg' alt='bandera de españa' width={300} />
-			</div>
-			<div>
-				<h2>Francia</h2>
-				<img src='/assets/images/fr.svg' alt='bandera de francia' width={300} />
-			</div>
-			<div>
-				<h2>Portugal</h2>
-				<img
-					src='/assets/images/pt.svg'
-					alt='bandera de portugal'
-					width={300}
-				/>
-			</div>
+			<Flag country='colombia' image='co.svg' />
+			<Flag country='canadá' image='ca.svg' />
+			<Flag country='españa' image='es.svg' />
+			<Flag country='portugal' image='pt.svg' />
+			<Flag country='francia' image='fr.svg' />
 		</>
 	);
 };
