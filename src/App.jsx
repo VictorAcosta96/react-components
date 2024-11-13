@@ -33,7 +33,7 @@ const App = () => {
 				<Flag country='portugal' image='pt.svg' people={35} />
 				<Flag country='francia' image='fr.svg' people={70} />
 			</FlagsContainer>
-			<DisplayPersonInfo {...personInfo} />
+
 			<GenerateFullName name='victor' lastName='acosta' />
 			<WriteBookInfo
 				title='El principito'
@@ -52,6 +52,7 @@ const App = () => {
 			<FindMaximum numbers={[2, 26, 9, 4, 21]} />
 			<CalculateAverage listNumbers={[2, 4, 6, 8]} />
 			<FindLongestString wordsList={['javascript', 'node', 'react']} />
+			<DisplayPersonInfo {...personInfo} />
 		</>
 	);
 };
